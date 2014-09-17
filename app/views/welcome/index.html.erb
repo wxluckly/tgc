@@ -1,107 +1,106 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="reset.css">
-<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
-<script type="text/javascript" src="js/respond.min.js"></script>
-
+  <meta charset="utf-8">
+  <title>无标题文档</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag 'reset', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
 <!--[if lte IE 6]>
-<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<%= javascript_include_tag 'DD_belatedPNG_0.0.8a-min' %>
 <script type="text/javascript">
-	$(document).ready(function(){
-		DD_belatedPNG.fix('.png_ie6');
-		$(".logo img")[0].src="images/logo.jpg";
-	});
+  $(document).ready(function(){
+    DD_belatedPNG.fix('.png_ie6');
+    $(".logo img")[0].src="images/logo.jpg";
+  });
 </script>
 <![endif]-->
 </head>
 
 <body>
-<div class="wrap">
-	<div class="header">
-		<div class="container">
-			<div class="head-inner clearfix">
-				<div class="logo">
-					<a href="#"><%= image_tag "logo.png", class: "png_ie6", alt: "胜观传播" %></a>
-				</div>
-				<div class="nav-box">
-					<ul class="nav">
-						<li><a href="#about"><p>关于我们</p><span>ABOUT</span></a></li>
-						<li><a href="#services"><p>服务项目</p><span>SERVICES</span></a></li>
-						<li><a href="#clients"><p>服务品牌</p><span>CLIENTS</span></a></li>
-						<li><a href="#contact"><p>联系我们</p><span>CONTACT</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="banner"><%= image_tag "banner.jpg", alt: "能让世界变得更美好的事，就值得我们去做。" %></div>
-	<div class="main">
-		<div class="container">
-			<div id="about" class="about-us clearfix">
-				<div class="about-left">
-					<%= image_tag "about-text.jpg", alt: "关于我们" %>
-				</div>
-				<div class="about-left about-left2">
-					<h2>关于我们<em>ABOUT</em></h2>
-					<h3>专注于以策略、内容为价值核心 </h3>
-					<p>胜观传播2010年在北京成立。</p>
-					<p><em>专业服务对象</em>包括汽车、金融、快速消费品等行业客户，致力于成为互联网环境下具有整体营销解决方案能力的品牌创意伙伴。</p>
-					<p><em>核心业务</em>是公关整合传播、数字及社会化营销、市场活动管理。</p>
-					<p><em>胜观传播团队</em>由不同领域的人才组成，组织结构由创意中心、内容中心、媒体中心三个工作单元构成，站在更高与更纵深的角度，为客户提供更具价值竞争力的专业服务。</p>
-				</div>
-				<div class="about-right"><%= image_tag "picture-03.jpg" %></div>
-			</div>
-			<div id="services" class="project">
-				<h2><%= image_tag "project.jpg", alt: "服务项目 services" %></h2>
-				<div class="project-img"><%= image_tag "picture-07.jpg" %></div>
-			</div>
-			<div id="clients" class="brand">
-				<h2><%= image_tag "brand.jpg", alt: "服务品牌 Clients" %></h2>
-				<div class="brand-img"><%= image_tag "picture-10.jpg" %></div>
-			</div>
-		</div>
-	</div>
-	<div id="contact" class="footer">
-		<div class="container">
-			<div class="clearfix">
-				<div class="footer-left">
-					<h2><%= image_tag "email.jpg", alt: "联系及案例咨询 CONTECT and cases" %></h2>
-					<form class="form-box">
-						<div class="form-group">
-						    <label for="exampleInputName">姓名</label>
-						    <input type="email" class="form-control" id="exampleInputName" >
-						  </div> 
-						  <div class="form-group">
-						    <label for="exampleInputEmail">邮箱</label>
-						    <input type="email" class="form-control" id="exampleInputEmail" >
-						  </div> 
-						  <div class="form-group">
-						    <label for="exampleInputText">主题</label>
-						    <input type="email" class="form-control" id="exampleInputText" >
-						  </div> 
-						  <div class="form-group">
-						    <label class="label-textarea">内容</label>
-						    <textarea class="form-control" rows="3"></textarea>
-						  </div> 
-						  <div class="form-group form-send">
-						    <input type="button" value="发送" >
-						  </div> 
-					</form>
-				</div>
-				<div class="footer-right">
-					<h2><%= image_tag "adress.jpg", alt: "地址 ADRESS" %></h2>
-					<p class="footer-title"><em>胜观传播</em> Thinkgrand Communication</p>
-					<p>北京市朝阳区青年路朝阳北路99号北楼10层<br/>Beijing city Chaoyang District Qingnian Road 
-Chaoyang north Road 99，North Building 10F.</p>
-					<p>T：+86 10-85569304<br/><i>T：</i>+86 10-85569263<br/>F：+86 10-85569263-806<br/>E：info@thinkgrand.com.cn<br/>H：www.thinkgrand.com.cn</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+  <div class="wrap">
+    <div class="header">
+      <div class="container">
+        <div class="head-inner clearfix">
+          <div class="logo">
+            <a href="#"><%= image_tag "logo.png", class: "png_ie6", alt: "胜观传播" %></a>
+          </div>
+          <div class="nav-box">
+            <ul class="nav">
+              <li><a href="#about"><p>关于我们</p><span>ABOUT</span></a></li>
+              <li><a href="#services"><p>服务项目</p><span>SERVICES</span></a></li>
+              <li><a href="#clients"><p>服务品牌</p><span>CLIENTS</span></a></li>
+              <li><a href="#contact"><p>联系我们</p><span>CONTACT</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner"><%= image_tag "banner.jpg", alt: "能让世界变得更美好的事，就值得我们去做。" %></div>
+    <div class="main">
+      <div class="container">
+        <div id="about" class="about-us clearfix">
+          <div class="about-left">
+            <%= image_tag "about-text.jpg", alt: "关于我们" %>
+          </div>
+          <div class="about-left about-left2">
+            <h2>关于我们<em>ABOUT</em></h2>
+            <h3>专注于以策略、内容为价值核心 </h3>
+            <p>胜观传播2010年在北京成立。</p>
+            <p><em>专业服务对象</em>包括汽车、金融、快速消费品等行业客户，致力于成为互联网环境下具有整体营销解决方案能力的品牌创意伙伴。</p>
+            <p><em>核心业务</em>是公关整合传播、数字及社会化营销、市场活动管理。</p>
+            <p><em>胜观传播团队</em>由不同领域的人才组成，组织结构由创意中心、内容中心、媒体中心三个工作单元构成，站在更高与更纵深的角度，为客户提供更具价值竞争力的专业服务。</p>
+          </div>
+          <div class="about-right"><%= image_tag "picture-03.jpg" %></div>
+        </div>
+        <div id="services" class="project">
+          <h2><%= image_tag "project.jpg", alt: "服务项目 services" %></h2>
+          <div class="project-img"><%= image_tag "picture-07.jpg" %></div>
+        </div>
+        <div id="clients" class="brand">
+          <h2><%= image_tag "brand.jpg", alt: "服务品牌 Clients" %></h2>
+          <div class="brand-img"><%= image_tag "picture-10.jpg" %></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="footer">
+      <div class="container">
+        <div class="clearfix">
+          <div class="footer-left">
+            <h2><%= image_tag "email.jpg", alt: "联系及案例咨询 CONTECT and cases" %></h2>
+            <form class="form-box">
+              <div class="form-group">
+                <label for="exampleInputName">姓名</label>
+                <input type="email" class="form-control" id="exampleInputName" >
+              </div> 
+              <div class="form-group">
+                <label for="exampleInputEmail">邮箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail" >
+              </div> 
+              <div class="form-group">
+                <label for="exampleInputText">主题</label>
+                <input type="email" class="form-control" id="exampleInputText" >
+              </div> 
+              <div class="form-group">
+                <label class="label-textarea">内容</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div> 
+              <div class="form-group form-send">
+                <input type="button" value="发送" >
+              </div> 
+            </form>
+          </div>
+          <div class="footer-right">
+            <h2><%= image_tag "adress.jpg", alt: "地址 ADRESS" %></h2>
+            <p class="footer-title"><em>胜观传播</em> Thinkgrand Communication</p>
+            <p>北京市朝阳区青年路朝阳北路99号北楼10层<br/>Beijing city Chaoyang District Qingnian Road 
+              Chaoyang north Road 99，North Building 10F.
+            </p>
+            <p>T：+86 10-85569304<br/><i>T：</i>+86 10-85569263<br/>F：+86 10-85569263-806<br/>E：info@thinkgrand.com.cn<br/>H：www.thinkgrand.com.cn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
