@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tgc</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>胜观传播</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag 'reset', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+<!--[if lte IE 6]>
+<%= javascript_include_tag 'DD_belatedPNG_0.0.8a-min' %>
+<script type="text/javascript">
+  $(document).ready(function(){
+    DD_belatedPNG.fix('.png_ie6');
+    $(".logo img")[0].src="images/logo.jpg";
+  });
+</script>
+<![endif]-->
+<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
