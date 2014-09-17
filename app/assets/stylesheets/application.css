@@ -15,7 +15,7 @@
  @charset "UTF-8";
 
 .container{ width: 1324px; margin: 0 auto;}
-.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100;_z-index: 0;zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white; width: 100%; border-bottom: 1px solid #f2f2f2;} 
+.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100;_z-index: 0;zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; border-bottom: 1px solid #f2f2f2;} 
 .head-inner{ padding: 20px 0 18px;}
 .logo{ width: 273px; float: left;}
 .logo a{ display: block; width: 100%; float: left;}
@@ -53,14 +53,10 @@
 .footer-right p i{ font-style: normal; color: white;}
 .footer-right p em{ font-style: normal; font-size: 22px;}
 
-
-@media screen and (max-width: 1344px) {
-	.container{ width: 98%;}
+@media screen and (max-width: 1400px) {
+	.container{ width: 90%;}
 	.logo{ width: 20.3%; }
 	.nav-box{ width: 79.6%;}
-	.nav{ margin-top: 10px;}
-	.nav li {  margin-left: 30px;*margin-left: 0;*width:120px;}
-	.nav li a { font-size:18px; line-height: 24px;}
 	.about-left{ width: 28.7%;}
 	.about-right{ float: right; width: 68.7%;}
 	.footer-left{ width: 55.8%;}
@@ -70,6 +66,14 @@
 	.form-box .form-group textarea{ width:88%;}
 	.form-box .form-send input{ width: 118px;}
 }
+@media screen and (max-width: 1344px) {
+	.nav{ margin-top: 10px;}
+	.nav li {  margin-left: 30px;*margin-left: 0;*width:120px;}
+	.nav li a { font-size:18px; line-height: 24px;}
+}
 @media screen and (max-width: 980px) {
+	.nav{margin-top: 0;}
 	.nav li { *width:110px;}
+	.nav li a {font-size: 14px; line-height: 20px;}
+	.nav li a span{font-size: 12px;}
 }
