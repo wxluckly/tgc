@@ -3,7 +3,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-html{ font-family: "Microsoft Yahei"; color: #7f7e7f;}
+html{ font-family: "Microsoft Yahei"; color: #7f7e7f; font-size: 14px;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
   padding: 0;
