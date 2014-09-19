@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>邮箱</th>
+      <th>主题</th>
+      <th>发送时间</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= contact.name %></td>
+      <td><%= contact.email %></td>
+      <td><%= link_to contact.title, [:admin, contact] %></td>
+      <td><%= contact.created_at.strftime('%Y年%m月%d日 %H点%M分') %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @contacts %>

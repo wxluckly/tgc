@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  resources :contacts, only: [:create]
+
   namespace :admin do 
     root 'home#index'
+    resources :contacts
   end
 end
