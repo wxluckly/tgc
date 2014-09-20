@@ -1,7 +1,8 @@
 class ContactsController < ActionController::Base
   
   def create
-    Contact.create(contact_params)
+    contact = Contact.create(contact_params)
+    MailerSystem.user_contact_notify(contact.id).deliver
   end
 
   private
