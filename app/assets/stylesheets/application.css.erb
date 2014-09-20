@@ -15,14 +15,14 @@
  @charset "UTF-8";
 
 .container{ width: 1024px; margin: 0 auto;}
-.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100;_z-index: 0;zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; } 
+.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100; zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; } 
 .head-inner{ padding: 20px 0 18px;}
 .logo{ width: 234px; float: left;}
 .logo a{ display: block; width: 100%; float: left;}
 .logo img{ width: 234px;height: auto; float: left;}
 .nav-box{ float: right; width: 734px;}
 .nav{ float: right; margin-top: 18px;_position: relative; _z-index: 2;}
-.nav li{ display: inline-block; float:left;margin-left: 90px; margin-left: 80px;*width:84px; text-align: center; line-height: 0;}
+.nav li{ display: inline-block; float:left; margin-left: 80px; _margin-left: 70px; *width:84px;_width:84px; text-align: center; line-height: 0;}
 .nav li a { display: inline-block;  *float:right;  font-size: 21px; line-height: 28px;}
 .nav li a span{ display: inline-block; width: 100%; *display:inline; font-size: 15px;}
 .banner{margin-bottom: 50px;}
@@ -54,14 +54,15 @@
 .footer h2{ margin-bottom: 20px;}
 
 .form-box{padding-top: 6px;}
-.form-box .form-group{ background: #fcdfa2; margin-bottom: 12px; clear: both; overflow: hidden;}
-.form-box .form-group label{width: 50px; padding: 4px 0; display: inline-block; float: left; text-align: center; font-size: 15px;}
+.form-box .form-group{ _height: 28px; background: #fcdfa2; margin-bottom: 12px; display: block; clear: both; overflow: hidden;}
+.form-box .form-group-textarea,.form-box .form-send{ _height: auto;}
+.form-box .form-group label{  height: 20px; width: 50px; padding: 4px 0;_float:left; display: inline-block; _display: block; float: left; text-align: center; font-size: 15px;}
 .form-box .form-group input,
-.form-box .form-group textarea{ box-shadow: none; background: #fcdfa2; border: none; color: #767573; width: 512px;  height: 20px; line-height: 28px; padding: 4px; font-size: 14px;}
+.form-box .form-group textarea{ box-shadow: none; _float:left; background: #fcdfa2; border: none; color: #767573; width: 512px;  height: 20px; line-height: 28px; padding: 4px; font-size: 14px;}
 .form-box .form-group textarea{ height: 140px; line-height: 24px; padding: 10px 4px;}
 .form-box .form-group .label-textarea{ vertical-align: top; line-height: 24px;}
 .form-box .form-send { padding: 0; background: white; text-align: right;}
-.form-box .form-send input{font-family: "Microsoft Yahei";  padding: 0; width: 88px; height: 28px; line-height: 28px; color: white; background: #aeaeae; font-size: 15px; cursor: pointer;}
+.form-box .form-send input{font-family: "Microsoft Yahei"; _float: right;  padding: 0; width: 88px; height: 28px; line-height: 28px; color: white; background: #aeaeae; font-size: 15px; cursor: pointer; _margin-top: 12px;}
 .footer{ position: relative;}
 .footer-right p{ margin-bottom: 14px; font-size: 13px; line-height: 23px;}
 .footer-right .footer-title{margin-bottom: 15px;}
