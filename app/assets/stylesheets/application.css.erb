@@ -14,75 +14,57 @@
  */
  @charset "UTF-8";
 
-.container{ width: 1324px; margin: 0 auto;}
-.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100;_z-index: 0;zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; } 
+.container{ width: 1024px; margin: 0 auto;}
+.header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100; zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; } 
 .head-inner{ padding: 20px 0 18px;}
-.logo{ width: 273px; float: left;}
+.logo{ width: 234px; float: left;}
 .logo a{ display: block; width: 100%; float: left;}
-.logo img{ max-width: 100%;width: 100%;height: auto; float: left;}
-.nav-box{ float: right; width: 1051px;}
+.logo img{ width: 234px;height: auto; float: left;}
+.nav-box{ float: right; width: 734px;}
 .nav{ float: right; margin-top: 18px;_position: relative; _z-index: 2;}
-.nav li{ display: inline-block; *float:left; *display:inline;*width:135px; margin-left: 90px;*margin-left: 0; text-align: center; line-height: 0;}
-.nav li a { display: inline-block;  *float:right;  font-size: 22px; line-height: 28px;}
-.nav li a span{ display: inline-block; width: 100%; *display:inline; font-size: 13px;}
-.banner img{ max-width: 100%;width: 100%;height: auto; margin: 0 auto; display: block;}
+.nav li{ display: inline-block; float:left; margin-left: 80px; _margin-left: 70px; *width:84px;_width:84px; text-align: center; line-height: 0;}
+.nav li a { display: inline-block;  *float:right;  font-size: 21px; line-height: 28px;}
+.nav li a span{ display: inline-block; width: 100%; *display:inline; font-size: 15px;}
+.banner{margin-bottom: 50px;}
+.banner img{ max-width: 1600px;width: 100%;height: auto; margin: 0 auto; display: block;}
 
-.about-us{ margin-top: 50px; padding-bottom: 50px; border-bottom: 1px solid #7d7d7d;}
-.about-left{ float: left; width: 386px;}
-.about-left2{ display: none;}
-.about-right{ float: right; width: 904px;}
+.blank-container{ height: 1px;width: 1px; z-index: 10; left: 0; position: absolute; top: -120px;}
 
+.about-us,
+.project,
+.brand{ position: relative; padding-bottom: 50px; margin-bottom: 40px; border-bottom: 1px solid #7d7d7d; zoom:1;}
+.about-left{ float: left; width: 290px;}
+.about-right{ float: right; width: 706px;}
+
+.about-left h2,
 .project h2,
-.footer,
-.brand h2{ margin-top: 40px;}
+.footer h2,
+.brand h2{ font: normal 25px/30px SimHei; color: #595757; margin-bottom: 30px;}
+.about-left h2{margin-bottom: 15px;}
+.about-left h2 em,
+.project h2 em,
+.footer h2 em,
+.brand h2 em{ font-style: normal; font-family: Arial; color: #f8b62b;}
+.about-left h3{ font: 19px/70px "Microsoft Yahei"; border:1px solid #7d7d7d; border-width: 1px 0; margin-bottom: 40px;}
+.about-left p{line-height: 28px; margin-bottom: 10px;}
+.about-left p em{line-height: 28px; color: #f8b62b;}
 .footer{ margin-bottom: 120px;}
-.footer-left{ width: 750px; float: left;}
-.footer-right{ width: 430px; float: right;}
-.footer h2{ margin-bottom: 40px;}
+.footer-left{ width: 570px; float: left;}
+.footer-right{ width: 325px; float: right;}
+.footer h2{ margin-bottom: 20px;}
 
-.form-box .form-group{ padding: 0 10px; background: #fcdfa2; margin-bottom: 12px;}
-.form-box .form-group label{width: 60px;}
+.form-box{padding-top: 6px;}
+.form-box .form-group{ _height: 28px; background: #fcdfa2; margin-bottom: 12px; display: block; clear: both; overflow: hidden;}
+.form-box .form-group-textarea,.form-box .form-send{ _height: auto;}
+.form-box .form-group label{  height: 20px; width: 50px; padding: 4px 0;_float:left; display: inline-block; _display: block; float: left; text-align: center; font-size: 15px;}
 .form-box .form-group input,
-.form-box .form-group textarea{  background: #fcdfa2; border: none; color: #767573; width: 676px;  height: 28px; line-height: 28px; padding: 4px; margin-left: 6px; font-size: 14px;}
-.form-box .form-group textarea{ height: 200px;}
-.form-box .form-group .label-textarea{ vertical-align: top; line-height: 32px;}
+.form-box .form-group textarea{ box-shadow: none; _float:left; background: #fcdfa2; border: none; color: #767573; width: 512px;  height: 20px; line-height: 20px; padding: 4px; font-size: 14px;}
+.form-box .form-group textarea{ height: 140px; line-height: 24px; padding: 10px 4px;}
+.form-box .form-group .label-textarea{ vertical-align: top; line-height: 24px;}
 .form-box .form-send { padding: 0; background: white; text-align: right;}
-.form-box .form-send input{font-family: "Microsoft Yahei";  padding: 0; width: 118px; height: 36px; line-height: 36px; color: white; background: #aeaeae; font-size: 20px;}
-.footer-right p{ margin-bottom: 20px; font-size: 18px; line-height: 28px;}
-.footer-right .footer-title{margin-bottom: 40px;}
+.form-box .form-send input{font-family: "Microsoft Yahei"; _float: right;  padding: 0; width: 88px; height: 28px; line-height: 28px; color: white; background: #aeaeae; font-size: 15px; cursor: pointer; _margin-top: 12px;}
+.footer{ position: relative;}
+.footer-right p{ margin-bottom: 14px; font-size: 13px; line-height: 23px;}
+.footer-right .footer-title{margin-bottom: 15px;}
 .footer-right p i{ font-style: normal; color: white;}
-.footer-right p em{ font-style: normal; font-size: 22px;}
-
-@media screen and (max-width: 1400px) {
-	.container{ width: 90%;}
-	.logo{ width: 20.3%; }
-	.nav-box{ width: 79.6%;}
-	.about-left{ width: 28.7%;}
-	.about-right{ float: right; width: 68.7%;}
-	.footer-left{ width: 55.8%;}
-	.footer-right{ width: 31.9%;}
-	.form-box .form-group label{width: 8.2%;}
-	.form-box .form-group input,
-	.form-box .form-group textarea{ width:88%;}
-	.form-box .form-send input{ width: 118px;}
-}
-@media screen and (max-width: 1344px) {
-	.nav{ margin-top: 10px;}
-	.nav li {  margin-left: 30px;*margin-left: 0;*width:120px;}
-	.nav li a { font-size:18px; line-height: 24px;}
-}
-@media screen and (max-width: 980px) {
-	.nav{margin-top: 0;}
-	.nav li { *width:110px;}
-	.nav li a {font-size: 14px; line-height: 20px;}
-	.nav li a span{font-size: 12px;}
-}
-
-@media screen and (max-width: 768px) {
-	.form-box .form-group input,
-	.form-box .form-group textarea{ width:82%;}
-}
-@media screen and (max-width: 480px) {
-	.form-box .form-group input,
-	.form-box .form-group textarea{ width:76%;}
-}
+.footer-right p em{ font-style: normal; font-size: 17px;}
