@@ -24,6 +24,9 @@ gem 'quiet_assets'  # 禁用assets log
 gem 'will_paginate'
 gem 'simple_form'
 gem 'ancestry'
+gem 'settingslogic'
+gem 'rails_config'
+gem 'rest-client'
 
 # 权限验证
 gem 'devise'

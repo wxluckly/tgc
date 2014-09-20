@@ -18,3 +18,7 @@
 config/database.yml
 config/secrets.yml
 Gemfile.lock
+
+config/settings/development.yml
+config/settings/production.yml
+config/settings/smtp.yml
