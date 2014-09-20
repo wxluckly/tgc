@@ -49,33 +49,35 @@
       <div class="clearfix">
         <div class="footer-left">
           <h2>联系及案例咨询 <em>CONTACT AND CASES</em></h2>
-          <form class="form-box">
-            <div class="form-group">
-                <label for="exampleInputName">姓名</label>
-                <input type="email" class="form-control" id="exampleInputName" >
-              </div> 
-              <div class="form-group">
-                <label for="exampleInputEmail">邮箱</label>
-                <input type="email" class="form-control" id="exampleInputEmail" >
-              </div> 
-              <div class="form-group">
-                <label for="exampleInputText">主题</label>
-                <input type="email" class="form-control" id="exampleInputText" >
-              </div> 
-              <div class="form-group form-group-textarea">
-                <label class="label-textarea">内容</label>
-                <textarea class="form-control" rows="3"></textarea>
-              </div> 
-              <div class="form-group form-send">
-                <input type="button" value="发送" >
-              </div> 
-          </form>
+          <%= form_for(Contact.new(), html: {class: "form-box"}, remote: true) do |f| %>
+          <%= tag(:input, type: "hidden", name: request_forgery_protection_token.to_s, value: form_authenticity_token) %>
+          <div class="form-group">
+            <label for="exampleInputName">姓名</label>
+            <input class="form-control" id="exampleInputName" name="contact[name]" >
+          </div> 
+          <div class="form-group">
+            <label for="exampleInputEmail">邮箱</label>
+            <input type="email" class="form-control" id="exampleInputEmail" name="contact[email]" >
+          </div> 
+          <div class="form-group">
+            <label for="exampleInputText">主题</label>
+            <input class="form-control" id="exampleInputText" name="contact[title]" >
+          </div> 
+          <div class="form-group">
+            <label class="label-textarea">内容</label>
+            <textarea class="form-control" rows="3" name="contact[content]"></textarea>
+          </div> 
+          <div class="form-group form-send">
+            <input type="submit" value="发送" >
+          </div> 
+          <% end %>
         </div>
         <div class="footer-right">
           <h2>地址 <em>ADRESS</em></h2>
           <p class="footer-title"><em>胜观传播</em> Thinkgrand Communication</p>
           <p>北京市朝阳区青年路朝阳北路99号北楼10层<br/>Beijing city Chaoyang District Qingnian Road 
-Chaoyang north Road 99，North Building 10F.</p>
+            Chaoyang north Road 99，North Building 10F.
+          </p>
           <p>T：+86 10-85569304<br/><i>T：</i>+86 10-85569263<br/>F：+86 10-85569263-806<br/>E：info@thinkgrand.com.cn<br/>H：www.thinkgrand.com.cn</p>
         </div>
       </div>

@@ -1,4 +1,5 @@
-class ContactsController < Admin::BaseController
+class ContactsController < ActionController::Base
+  
   def create
     Contact.create(contact_params)
   end
