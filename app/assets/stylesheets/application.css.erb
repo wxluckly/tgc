@@ -14,55 +14,57 @@
  */
  @charset "UTF-8";
 
-.container{ width: 1024px; margin: 0 auto;}
+.container{ width: 920px; margin: 0 auto;}
 .header{  position: fixed;_position:absolute; top: 0;_top: expression(eval(document.documentElement.scrollTop)); left: 0; z-index: 100; zoom:1; background: url('<%= image_url "head-bg.png" %>') left top repeat-x; _background:white;  width: 100%; } 
 .head-inner{ padding: 20px 0 18px;}
-.logo{ width: 234px; float: left;}
+.logo{ width: 222px; float: left;}
 .logo a{ display: block; width: 100%; float: left;}
 .logo img{ width: 234px;height: auto; float: left;}
-.nav-box{ float: right; width: 734px;}
+.nav-box{ float: right; width: 690px; _width: 680px;}
 .nav{ float: right; margin-top: 18px;_position: relative; _z-index: 2;}
-.nav li{ display: inline-block; float:left; margin-left: 80px; _margin-left: 70px; *width:84px;_width:84px; text-align: center; line-height: 0;}
-.nav li a { display: inline-block;  *float:right;  font-size: 21px; line-height: 28px;}
+.nav li{ display: inline-block; float:left; margin-left: 64px; _margin-left: 50px; *width:84px; text-align: center; line-height: 0;}
+.nav li a { display: inline-block;  *float:right;  font-size: 20px; line-height: 28px;}
 .nav li a span{ display: inline-block; width: 100%; *display:inline; font-size: 15px;}
 .banner{margin-bottom: 50px;}
 .banner img{ max-width: 1600px;width: 100%;height: auto; margin: 0 auto; display: block;}
 
-.blank-container{ height: 1px;width: 1px; z-index: 10; left: 0; position: absolute; top: -120px;}
+.blank-container{ height: 1px;width: 1px; z-index: 10; left: 0; position: absolute; top: -170px;}
 
 .about-us,
 .project,
-.brand{ position: relative; padding-bottom: 50px; margin-bottom: 40px; border-bottom: 1px solid #7d7d7d; zoom:1;}
-.about-left{ float: left; width: 290px;}
-.about-right{ float: right; width: 706px;}
+.brand{ position: relative; padding-bottom: 50px; margin-bottom: 56px; border-bottom: 1px solid #7d7d7d; zoom:1;}
+.about-left{ float: left; width: 260px;}
+.about-right{ float: right; width: 632px;}
 
 .about-left h2,
 .project h2,
 .footer h2,
-.brand h2{ font: normal 25px/30px SimHei; color: #595757; margin-bottom: 30px;}
+.brand h2{ font: normal 22px/30px SimHei; color: #595757; margin-bottom: 30px;}
 .about-left h2{margin-bottom: 15px;}
 .about-left h2 em,
 .project h2 em,
 .footer h2 em,
 .brand h2 em{ font-style: normal; font-family: Arial; color: #f8b62b;}
-.about-left h3{ font: 19px/70px "Microsoft Yahei"; border:1px solid #7d7d7d; border-width: 1px 0; margin-bottom: 40px;}
-.about-left p{line-height: 28px; margin-bottom: 10px;}
+.about-left h3{ font: 17px/62px "Microsoft Yahei"; border:1px solid #7d7d7d; border-width: 1px 0; margin-bottom: 20px;}
+.about-left p{line-height: 26px; font-size: 13px; margin-bottom: 10px;}
 .about-left p em{line-height: 28px; color: #f8b62b;}
 .footer{ margin-bottom: 120px;}
-.footer-left{ width: 570px; float: left;}
-.footer-right{ width: 325px; float: right;}
+.footer-left{ width: 527px; float: left;}
+.footer-right{ width: 273px; float: right;}
 .footer h2{ margin-bottom: 20px;}
 
 .form-box{padding-top: 6px;}
 .form-box .form-group{ _height: 28px; background: #fcdfa2; margin-bottom: 12px; display: block; clear: both; overflow: hidden;}
-.form-box .form-group-textarea,.form-box .form-send{ _height: auto;}
-.form-box .form-group label{  height: 20px; width: 50px; padding: 4px 0;_float:left; display: inline-block; _display: block; float: left; text-align: center; font-size: 15px;}
+
+.form-box .form-group label{  height: 20px; width: 46px; padding: 4px 0;_float:left; display: inline-block; _display: block; float: left; text-align: center; font-size: 14px;}
 .form-box .form-group input,
-.form-box .form-group textarea{ box-shadow: none; _float:left; background: #fcdfa2; border: none; color: #767573; width: 512px;  height: 20px; line-height: 20px; padding: 4px; font-size: 14px;}
-.form-box .form-group textarea{ height: 140px; line-height: 24px; padding: 10px 4px;}
+.form-box .form-group textarea{font-family: "Microsoft Yahei"; box-shadow: none; _float:left; background: #fcdfa2; border: none; color: #767573; width: 469px;  height: 20px; line-height: 20px; padding: 4px; font-size: 14px;}
+.form-box .form-group textarea{ height: 140px; line-height: 24px; padding: 4px;}
 .form-box .form-group .label-textarea{ vertical-align: top; line-height: 24px;}
 .form-box .form-send { padding: 0; background: white; text-align: right;}
-.form-box .form-send input{font-family: "Microsoft Yahei"; _float: right;  padding: 0; width: 88px; height: 28px; line-height: 28px; color: white; background: #aeaeae; font-size: 15px; cursor: pointer; _margin-top: 12px;}
+.form-box .form-send input{font-family: "Microsoft Yahei"; _float: right;  padding: 0; width: 82px; height: 26px; line-height: 26px; color: white; background: #aeaeae; font-size: 14px; cursor: pointer; _margin-top: 12px;}
+.form-box .form-group-textarea{ _height: 148px;}
+.form-box .form-send{ _height: auto;}
 .footer{ position: relative;}
 .footer-right p{ margin-bottom: 14px; font-size: 13px; line-height: 23px;}
 .footer-right .footer-title{margin-bottom: 15px;}
