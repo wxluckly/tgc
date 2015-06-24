@@ -2,7 +2,7 @@ source 'http://ruby.taobao.org'
 
 # ruby '2.1.2'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 4.1.4'
 
 # 数据库
 gem 'mysql2'
