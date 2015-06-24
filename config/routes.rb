@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :contacts, only: [:create]
+  namespace :focus do
+    get :first
+  end
 
   namespace :admin do 
     root 'home#index'
